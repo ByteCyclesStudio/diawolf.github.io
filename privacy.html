@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DiaWolf</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand-blue:   #3D5A99;
+      --brand-accent: #7BB1DB;
+      --text-primary: #1a1a1a;
+      --text-muted:   #6b7280;
+      --border:       #e5e7eb;
+      --bg:           #f9fafb;
+      --surface:      #ffffff;
+      --radius:       10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      background: var(--bg);
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--brand-blue);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header .wordmark {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #fff;
+      text-decoration: none;
+    }
+    header .wordmark span { color: var(--brand-accent); }
+    header h1 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+    header .meta {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.25rem;
+    }
+
+    /* ── Section cards ── */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    section h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand-blue);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--brand-accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    section h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 1.1rem 0 0.4rem;
+      color: var(--text-primary);
+    }
+
+    p { margin-bottom: 0.75rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    li { margin-bottom: 0.3rem; }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 0.75rem 0 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th {
+      background: var(--bg);
+      color: var(--brand-blue);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.85rem;
+      border-bottom: 2px solid var(--border);
+    }
+    td {
+      padding: 0.55rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    td a { color: var(--brand-blue); }
+
+    /* ── Callout box ── */
+    .callout {
+      background: #eff6ff;
+      border-left: 4px solid var(--brand-accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 0.9rem 1.1rem;
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+    }
+    .callout strong { color: var(--brand-blue); }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 0.85rem;
+    }
+    .contact-card p { margin: 0.2rem 0; font-size: 0.95rem; }
+    .contact-card a { color: var(--brand-blue); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      padding: 2rem 1rem 3rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--brand-blue); }
+
+    @media (max-width: 600px) {
+      section { padding: 1.25rem 1.1rem; }
+      header { padding: 2rem 1rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="wordmark">Dia<span>Wolf</span></a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective Date: June 26, 2026 &nbsp;·&nbsp; Last Updated: June 26, 2026</p>
+</header>
+
+<main>
+
+  <!-- Intro -->
+  <section>
+    <p>
+      <strong>Byte Cycles Studio LLC</strong> ("we," "us," or "our") built
+      <strong>DiaWolf</strong> as a native iOS and Apple Watch application for
+      people with diabetes who want to track workouts alongside continuous glucose
+      monitor (CGM) data. This policy explains what data DiaWolf accesses, how
+      we use it, and what we never do with it.
+    </p>
+    <div class="callout">
+      <strong>Short version:</strong> Your health data stays on your device and
+      in Apple HealthKit. We never sell it, share it with advertisers, or send
+      it to data brokers — ever.
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span>Data We Access</h2>
+
+    <h3>Health &amp; Fitness Data (Apple HealthKit)</h3>
+    <p>DiaWolf reads and writes the following HealthKit types to track your workouts:</p>
+    <ul>
+      <li>Workout sessions — type, duration, distance, active energy</li>
+      <li>Heart rate and heart rate variability</li>
+      <li>Step count and walking/running distance</li>
+      <li>GPS route data during outdoor workouts</li>
+    </ul>
+
+    <h3>Glucose Data (Dexcom CGM)</h3>
+    <p>
+      With your explicit authorization, DiaWolf connects to the Dexcom API to
+      fetch real-time and historical glucose readings, trend direction, and
+      device information. This connection uses OAuth 2.0 — we never see your
+      Dexcom username or password.
+    </p>
+
+    <h3>Data You Enter Manually</h3>
+    <ul>
+      <li>Manual glucose readings (finger-stick or manual CGM entry)</li>
+      <li>Bike and equipment profiles</li>
+      <li>App preferences and display settings</li>
+    </ul>
+
+    <h3>Location</h3>
+    <p>
+      DiaWolf requests location access during active outdoor workouts to record
+      your route. Location is not collected in the background outside of an
+      active workout session.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span>How We Use Your Data</h2>
+    <p>We use your data exclusively for health and fitness purposes directly
+    related to DiaWolf's mission:</p>
+    <ul>
+      <li>Displaying live workout metrics and CGM glucose overlays during exercise</li>
+      <li>Storing and summarizing completed workouts</li>
+      <li>Calculating Glucose Management Indicator (GMI) estimates from CGM history</li>
+      <li>Generating exportable workout files (GPX, video)</li>
+      <li>Syncing workouts to third-party services you explicitly authorize</li>
+    </ul>
+    <div class="callout">
+      <strong>We do not use HealthKit or CGM data for advertising, marketing,
+      analytics sold to third parties, or with data brokers.</strong> This is
+      both our policy and a requirement of Apple's HealthKit guidelines.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span>Data Storage &amp; Security</h2>
+    <ul>
+      <li>Health and workout data is stored on your device via Apple HealthKit and CoreData.</li>
+      <li>Authentication credentials (Dexcom, Strava, Coros tokens) are stored in your device's secure Keychain.</li>
+      <li>If you enable the optional backend sync feature, data is transmitted over encrypted HTTPS to your personal server instance.</li>
+      <li>We do not operate shared cloud servers that store your health data.</li>
+    </ul>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span>Third-Party Integrations</h2>
+    <p>
+      DiaWolf connects to these services only when you explicitly authorize each
+      connection. You can disconnect any service at any time from DiaWolf Settings.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Purpose</th>
+            <th>What's Shared</th>
+            <th>Privacy Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dexcom</strong></td>
+            <td>CGM glucose readings</td>
+            <td>OAuth token only; glucose data is fetched directly to your device</td>
+            <td><a href="https://www.dexcom.com/privacy-policy" target="_blank" rel="noopener">dexcom.com</a></td>
+          </tr>
+          <tr>
+            <td><strong>Strava</strong></td>
+            <td>Export completed workouts</td>
+            <td>Workout duration, distance, route, activity type</td>
+            <td><a href="https://www.strava.com/legal/privacy" target="_blank" rel="noopener">strava.com</a></td>
+          </tr>
+          <tr>
+            <td><strong>Coros</strong></td>
+            <td>Sync workout data</td>
+            <td>Workout metrics</td>
+            <td><a href="https://www.coros.com/privacy" target="_blank" rel="noopener">coros.com</a></td>
+          </tr>
+          <tr>
+            <td><strong>TrailForks</strong></td>
+            <td>Trail maps and route data</td>
+            <td>Location read for map display; no data transmitted to TrailForks</td>
+            <td><a href="https://www.trailforks.com/privacy/" target="_blank" rel="noopener">trailforks.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span>Apple HealthKit</h2>
+    <p>
+      DiaWolf's use of Apple HealthKit is governed by Apple's developer
+      guidelines. In compliance with those guidelines:
+    </p>
+    <ul>
+      <li>HealthKit data is used only for health and fitness purposes within DiaWolf.</li>
+      <li>HealthKit data is never used for advertising or shared with data brokers.</li>
+      <li>HealthKit data is never shared with third parties without your explicit, action-initiated consent (e.g., exporting a workout to Strava).</li>
+    </ul>
+    <p>
+      You control all HealthKit permissions from <strong>iOS Settings → Health →
+      Data Access &amp; Devices → DiaWolf</strong>.
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span>Your Rights &amp; Choices</h2>
+    <ul>
+      <li><strong>HealthKit permissions</strong> — iOS Settings → Health → Data Access &amp; Devices → DiaWolf</li>
+      <li><strong>Location permissions</strong> — iOS Settings → Privacy &amp; Security → Location Services → DiaWolf</li>
+      <li><strong>CGM connection</strong> — DiaWolf Settings → Disconnect Dexcom</li>
+      <li><strong>Third-party connections</strong> — DiaWolf Settings → disconnect Strava, Coros individually</li>
+      <li><strong>Delete all app data</strong> — delete the DiaWolf app from your device. HealthKit data you authored can be managed separately through the Apple Health app.</li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span>Children's Privacy</h2>
+    <p>
+      DiaWolf is not directed at children under 13. We do not knowingly collect
+      personal information from children under 13. If you believe a child under
+      13 has provided us with personal information, please contact us and we will
+      promptly delete it.
+    </p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy as the app evolves. We will update the
+      "Last Updated" date at the top of this page when changes are made.
+      For material changes, we will provide notice within the app. Continued use
+      of DiaWolf after changes are posted constitutes your acceptance of the
+      updated policy.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span>Contact Us</h2>
+    <p>Questions, concerns, or requests about your data:</p>
+    <div class="contact-card">
+      <p><strong>Byte Cycles Studio LLC</strong></p>
+      <p>Email: <a href="mailto:hello@bytecyclesstudio.com">hello@bytecyclesstudio.com</a></p>
+      <p>Web: <a href="https://bytecyclesstudio.com" target="_blank" rel="noopener">bytecyclesstudio.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Byte Cycles Studio LLC &nbsp;·&nbsp;
+     <a href="/">DiaWolf</a> &nbsp;·&nbsp;
+     <a href="mailto:hello@bytecyclesstudio.com">Contact</a>
+  </p>
+  <p style="margin-top:0.4rem;">
+    DiaWolf is not a medical device. GMI estimates are not a substitute for
+    lab A1C testing. Always consult your healthcare provider.
+  </p>
+</footer>
+
+</body>
+</html>
