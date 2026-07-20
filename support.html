@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — DiaWolf</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand-blue:   #3D5A99;
+      --brand-accent: #7BB1DB;
+      --text-primary: #1a1a1a;
+      --text-muted:   #6b7280;
+      --border:       #e5e7eb;
+      --bg:           #f9fafb;
+      --surface:      #ffffff;
+      --radius:       10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      background: var(--bg);
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--brand-blue);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header .wordmark {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #fff;
+      text-decoration: none;
+    }
+    header .wordmark span { color: var(--brand-accent); }
+    header h1 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+    header .meta {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.25rem;
+    }
+
+    /* ── Section cards ── */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    section h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand-blue);
+      margin-bottom: 0.85rem;
+    }
+
+    section h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 1.1rem 0 0.4rem;
+      color: var(--text-primary);
+    }
+    section h3:first-of-type { margin-top: 0; }
+
+    p { margin-bottom: 0.75rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Callout box ── */
+    .callout {
+      background: #eff6ff;
+      border-left: 4px solid var(--brand-accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 0.9rem 1.1rem;
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+    }
+    .callout strong { color: var(--brand-blue); }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 0.85rem;
+    }
+    .contact-card p { margin: 0.2rem 0; font-size: 0.95rem; }
+    .contact-card a { color: var(--brand-blue); }
+
+    a { color: var(--brand-blue); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      padding: 2rem 1rem 3rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--brand-blue); }
+
+    @media (max-width: 600px) {
+      section { padding: 1.25rem 1.1rem; }
+      header { padding: 2rem 1rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="wordmark">Dia<span>Wolf</span></a>
+  <h1>Support</h1>
+  <p class="meta">Questions, bugs, or feedback — start here.</p>
+</header>
+
+<main>
+
+  <!-- Contact intro -->
+  <section>
+    <p>
+      Questions, bugs, or feedback? Email
+      <a href="mailto:support@diawolf.net">support@diawolf.net</a> — it's read
+      by the person who builds DiaWolf, and you'll typically hear back within
+      2-3 business days.
+    </p>
+    <p>Before you email, a lot of common questions are answered below.</p>
+  </section>
+
+  <!-- Glucose & CGM -->
+  <section>
+    <h2>Glucose &amp; CGM</h2>
+
+    <h3>Which CGMs does DiaWolf work with?</h3>
+    <p>
+      DiaWolf reads glucose data through Apple Health, so it works with any
+      CGM app that shares data to Apple Health — including Dexcom G6/G7,
+      FreeStyle Libre 2/3, and Eversense 365.
+    </p>
+
+    <h3>Is my glucose data private? Where does it go?</h3>
+    <p>
+      Your glucose and health data stays between your device, Apple Health,
+      and (if you enable iCloud backup) your own private iCloud account.
+      DiaWolf doesn't sell health data or use it for advertising. See the full
+      <a href="privacy.html">Privacy Policy</a> for details.
+    </p>
+
+    <h3>Why isn't my glucose reading updating?</h3>
+    <p>
+      Make sure DiaWolf has permission to read Blood Glucose data in Settings
+      &gt; Privacy &amp; Security &gt; Health &gt; DiaWolf. If you're using
+      Apple Watch, glucose updates on the Watch face can lag by a few minutes
+      when idle — this is intentional (it avoids draining your battery by
+      waking the Watch constantly) and updates as soon as you raise your
+      wrist.
+    </p>
+  </section>
+
+  <!-- Workouts & Activity Tracking -->
+  <section>
+    <h2>Workouts &amp; Activity Tracking</h2>
+
+    <h3>What workout types does DiaWolf support?</h3>
+    <p>
+      Cycling, running, hiking, walking, treadmill, indoor biking, swimming
+      (pool and open water), strength training, and several others — plus
+      most standard HealthKit activity types.
+    </p>
+
+    <h3>Does DiaWolf work with my bike sensors?</h3>
+    <p>
+      Yes — DiaWolf supports Bluetooth speed and cadence sensors, including
+      Wahoo and Garmin sensors. You can also save your bike and wheel size as
+      a profile for accurate speed/distance.
+    </p>
+
+    <h3>Can I track strength training — sets, reps, weights?</h3>
+    <p>
+      Yes. DiaWolf logs sets and reps per exercise, tracks personal records,
+      and includes rest timers between sets.
+    </p>
+
+    <h3>Does DiaWolf show my glucose during a workout?</h3>
+    <p>
+      Yes — that's the core of what DiaWolf does. It overlays your glucose
+      trend alongside heart rate, pace, and distance in real time, and shows
+      how your glucose responded up to two hours after you finish, since
+      that's the window that matters most for post-exercise lows.
+    </p>
+  </section>
+
+  <!-- Apple Watch -->
+  <section>
+    <h2>Apple Watch</h2>
+
+    <h3>Does DiaWolf have an Apple Watch app?</h3>
+    <p>
+      Yes. You can start and track workouts from your Watch, see live heart
+      rate and glucose, and view HR zones — all without needing your phone
+      nearby.
+    </p>
+
+    <h3>Can I start a workout from my phone and still see it on my Watch, or vice versa?</h3>
+    <p>Yes, workouts started on either device mirror to the other automatically.</p>
+  </section>
+
+  <!-- Subscription & Pricing -->
+  <section>
+    <h2>Subscription &amp; Pricing</h2>
+
+    <h3>What's included in DiaWolf Pro?</h3>
+    <p>
+      Pro unlocks extended history, deeper glucose-exercise trend analysis,
+      GMI/eA1c convergence panels across multiple time windows, route replay,
+      and custom app themes.
+    </p>
+
+    <h3>What are the pricing options?</h3>
+    <p>DiaWolf Pro is available as:</p>
+    <ul style="padding-left: 1.4rem; margin-bottom: 0.75rem;">
+      <li>Monthly — $8.99/month</li>
+      <li>Annual — $59.99/year (discounted vs. monthly)</li>
+      <li>Lifetime — $129.99 one-time purchase</li>
+    </ul>
+
+    <h3>How do I cancel or manage my subscription?</h3>
+    <p>
+      Subscriptions are billed through your Apple ID and can be managed
+      anytime in Settings &gt; [your name] &gt; Subscriptions on your iPhone.
+      DiaWolf doesn't handle billing directly — Apple does, so cancelling
+      there is all you need to do.
+    </p>
+
+    <h3>Is there a free trial?</h3>
+    <p>
+      Yes — new subscribers get a 14-day free trial that enables all Pro
+      features immediately, so you can try everything before committing.
+    </p>
+  </section>
+
+  <!-- Data & Backup -->
+  <section>
+    <h2>Data &amp; Backup</h2>
+
+    <h3>What happens to my data if I get a new phone?</h3>
+    <p>
+      If you have iCloud backup enabled, your workouts and settings restore
+      automatically when you sign into the same Apple ID on a new device.
+      Your health data itself lives in Apple Health, which already syncs via
+      iCloud independently of DiaWolf.
+    </p>
+
+    <h3>Can I export my workout data?</h3>
+    <p>
+      Not yet from within DiaWolf directly — that's planned for a future
+      update. In the meantime, your workout and health data already lives in
+      Apple Health, which has its own built-in export feature you can use
+      today.
+    </p>
+  </section>
+
+  <!-- Troubleshooting -->
+  <section>
+    <h2>Troubleshooting</h2>
+
+    <h3>My workout didn't show up in History.</h3>
+    <p>
+      Make sure the workout finished and saved (check Apple Health directly —
+      if it's there, it should sync to DiaWolf). If it's missing from both,
+      try force-quitting and reopening DiaWolf.
+    </p>
+
+    <h3>I'm not getting low/high glucose alerts.</h3>
+    <p>
+      Check that Notifications are enabled for DiaWolf in iPhone Settings,
+      and that your alert thresholds are set the way you want under DiaWolf's
+      Settings &gt; Glucose Display.
+    </p>
+
+    <h3>The app feels slow or a screen looks wrong.</h3>
+    <p>
+      Please email a description (and a screenshot if it's visual) — this
+      kind of report is genuinely the most useful thing you can send, since
+      it's hard to catch every device/iOS combination before release.
+    </p>
+  </section>
+
+  <!-- Feedback & Feature Requests -->
+  <section>
+    <h2>Feedback &amp; Feature Requests</h2>
+
+    <h3>How do I request a feature or report a bug?</h3>
+    <p>
+      Email <a href="mailto:support@diawolf.net">support@diawolf.net</a> with
+      as much detail as you can — what you expected, what happened instead,
+      and your device/iOS version if it's a bug. DiaWolf is built by one
+      person, so every piece of feedback is actually read and considered,
+      even if it takes a while to act on.
+    </p>
+    <div class="contact-card">
+      <p><strong>DiaWolf</strong></p>
+      <p>Email: <a href="mailto:support@diawolf.net">support@diawolf.net</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Byte Cycles Studio LLC &nbsp;·&nbsp;
+     <a href="/">DiaWolf</a> &nbsp;·&nbsp;
+     <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+     <a href="mailto:support@diawolf.net">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>

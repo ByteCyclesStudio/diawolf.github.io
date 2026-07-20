@@ -174,7 +174,7 @@
 <header>
   <a href="/" class="wordmark">Dia<span>Wolf</span></a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective Date: June 26, 2026 &nbsp;·&nbsp; Last Updated: July 13, 2026</p>
+  <p class="meta">Effective Date: June 26, 2026 &nbsp;·&nbsp; Last Updated: July 20, 2026</p>
 </header>
 
 <main>
@@ -207,14 +207,6 @@
       <li>Step count and walking/running distance</li>
       <li>GPS route data during outdoor workouts</li>
     </ul>
-
-    <h3>Glucose Data (Dexcom CGM)</h3>
-    <p>
-      With your explicit authorization, DiaWolf connects to the Dexcom API to
-      fetch real-time and historical glucose readings, trend direction, and
-      device information. This connection uses OAuth 2.0 — we never see your
-      Dexcom username or password.
-    </p>
 
     <h3>Data You Enter Manually</h3>
     <ul>
@@ -261,7 +253,7 @@
       accessible to us — we cannot see, access, or download it. It stays within your own iCloud
       account and follows your device's iCloud sign-in state; you can review or manage it under
       Settings → [your name] → iCloud on your device.</li>
-      <li>Authentication credentials (Dexcom, Strava, Coros tokens) are stored in your device's secure Keychain.</li>
+      <li>Authentication credentials (Coros tokens) are stored in your device's secure Keychain.</li>
       <li>We do not operate shared cloud servers that store your health data.</li>
     </ul>
   </section>
@@ -285,28 +277,10 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Dexcom</strong></td>
-            <td>CGM glucose readings</td>
-            <td>OAuth token only; glucose data is fetched directly to your device</td>
-            <td><a href="https://www.dexcom.com/privacy-policy" target="_blank" rel="noopener">dexcom.com</a></td>
-          </tr>
-          <tr>
-            <td><strong>Strava</strong></td>
-            <td>Export completed workouts</td>
-            <td>Workout duration, distance, route, activity type</td>
-            <td><a href="https://www.strava.com/legal/privacy" target="_blank" rel="noopener">strava.com</a></td>
-          </tr>
-          <tr>
             <td><strong>Coros</strong></td>
             <td>Sync workout data</td>
             <td>Workout metrics</td>
             <td><a href="https://www.coros.com/privacy" target="_blank" rel="noopener">coros.com</a></td>
-          </tr>
-          <tr>
-            <td><strong>TrailForks</strong></td>
-            <td>Trail maps and route data</td>
-            <td>Location read for map display; no data transmitted to TrailForks</td>
-            <td><a href="https://www.trailforks.com/privacy/" target="_blank" rel="noopener">trailforks.com</a></td>
           </tr>
         </tbody>
       </table>
@@ -323,7 +297,7 @@
     <ul>
       <li>HealthKit data is used only for health and fitness purposes within DiaWolf.</li>
       <li>HealthKit data is never used for advertising or shared with data brokers.</li>
-      <li>HealthKit data is never shared with third parties without your explicit, action-initiated consent (e.g., exporting a workout to Strava).</li>
+      <li>HealthKit data is never shared with third parties without your explicit, action-initiated consent.</li>
     </ul>
     <p>
       You control all HealthKit permissions from <strong>iOS Settings → Health →
@@ -337,8 +311,7 @@
     <ul>
       <li><strong>HealthKit permissions</strong> — iOS Settings → Health → Data Access &amp; Devices → DiaWolf</li>
       <li><strong>Location permissions</strong> — iOS Settings → Privacy &amp; Security → Location Services → DiaWolf</li>
-      <li><strong>CGM connection</strong> — DiaWolf Settings → Disconnect Dexcom</li>
-      <li><strong>Third-party connections</strong> — DiaWolf Settings → disconnect Strava, Coros individually</li>
+      <li><strong>Third-party connections</strong> — DiaWolf Settings → disconnect Coros</li>
       <li><strong>Delete all app data</strong> — delete the DiaWolf app from your device. HealthKit data you authored can be managed separately through the Apple Health app.</li>
     </ul>
   </section>
